@@ -1,15 +1,16 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Defense Home Tutor Service | Home & Online Tutors in DHA Lahore</title>
+<title>Defense Home Tutor Service | Home Tutors in DHA Lahore</title>
 
-<meta name="description" content="Defense Home Tutor Service provides professional Home Tutors, Online Tutors, O Level Tutors, A Level Tutors and Subject Specialists in DHA Lahore.">
+<meta name="description" content="Professional Home Tutors, Online Tutors, O Level Tutors and A Level Tutors in DHA Lahore.">
 
-<meta name="keywords" content="Home Tutor DHA Lahore, Online Tutor Lahore, O Level Tutor, A Level Tutor, Home Tuition Lahore">
+<meta name="keywords" content="Home Tutor DHA Lahore, Online Tutor Lahore, O Level Tutor, A Level Tutor">
+
+<meta name="author" content="Defense Home Tutor Service">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -20,31 +21,42 @@ margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
-background:#f8fafc;
-color:#334155;
-line-height:1.7;
+background:#f5f7fb;
+color:#333;
 }
 
 header{
-background:linear-gradient(135deg,#0f172a,#2563eb);
-color:white;
-padding:20px 8%;
-position:sticky;
+position:fixed;
+width:100%;
 top:0;
-z-index:1000;
-}
-
-nav{
+left:0;
+background:#071a3d;
+padding:15px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
+z-index:999;
+box-shadow:0 2px 10px rgba(0,0,0,.15);
 }
 
 .logo{
-font-size:24px;
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo img{
+height:60px;
+width:auto;
+}
+
+.logo span{
+color:#fff;
+font-size:22px;
 font-weight:700;
 }
 
@@ -55,32 +67,38 @@ gap:25px;
 }
 
 nav ul li a{
-color:white;
+color:#fff;
 text-decoration:none;
 font-weight:500;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#4da3ff;
 }
 
 .hero{
-min-height:90vh;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-padding:50px 8%;
+height:100vh;
 background:
-linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
 url('https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1800&q=80');
 background-size:cover;
 background-position:center;
-color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
 }
 
 .hero-content h1{
-font-size:55px;
+color:#fff;
+font-size:60px;
 margin-bottom:15px;
 }
 
 .hero-content p{
+color:#fff;
 font-size:20px;
 max-width:800px;
 margin:auto;
@@ -88,132 +106,103 @@ margin:auto;
 
 .btn{
 display:inline-block;
-margin:15px 10px;
+margin-top:25px;
 padding:14px 30px;
-background:#38bdf8;
-color:white;
+background:#1e6cff;
+color:#fff;
 text-decoration:none;
 border-radius:8px;
 font-weight:600;
+margin-right:10px;
 transition:.3s;
 }
 
 .btn:hover{
-background:#0284c7;
+background:#004dd6;
 }
 
 section{
-padding:80px 8%;
+padding:90px 8%;
 }
 
 .section-title{
 text-align:center;
-font-size:38px;
+font-size:40px;
+color:#071a3d;
 margin-bottom:50px;
-color:#0f172a;
 }
 
 .about{
-text-align:center;
-max-width:1000px;
-margin:auto;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:15px;
+}
+
+.about-text h3{
+font-size:30px;
+margin-bottom:20px;
+color:#071a3d;
+}
+
+.about-text p{
+line-height:1.9;
 }
 
 .services{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
 gap:25px;
 }
 
-.card{
-background:white;
-padding:30px;
+.service-card{
+background:#fff;
 border-radius:15px;
-box-shadow:0 5px 20px rgba(0,0,0,.08);
-transition:.3s;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.4s;
 }
 
-.card:hover{
-transform:translateY(-8px);
+.service-card:hover{
+transform:translateY(-10px);
 }
 
-.card img{
+.service-card img{
 width:100%;
 height:220px;
 object-fit:cover;
-border-radius:10px;
-margin-bottom:15px;
 }
 
-.card h3{
+.service-content{
+padding:25px;
+}
+
+.service-content h3{
 margin-bottom:10px;
-color:#2563eb;
+color:#071a3d;
 }
 
-.contact-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:40px;
-}
-
-.contact-box{
-background:white;
-padding:30px;
-border-radius:15px;
-box-shadow:0 5px 20px rgba(0,0,0,.08);
-}
-
-.faq{
-max-width:900px;
-margin:auto;
-}
-
-details{
-background:white;
-margin-bottom:15px;
-padding:15px;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,.05);
-}
-
-footer{
-background:#0f172a;
-color:white;
-text-align:center;
-padding:30px;
-}
-
-.whatsapp{
-position:fixed;
-right:20px;
-bottom:20px;
-background:#25D366;
-color:white;
-padding:15px 20px;
-border-radius:50px;
-text-decoration:none;
-font-weight:700;
-box-shadow:0 5px 15px rgba(0,0,0,.3);
+.service-content p{
+line-height:1.8;
 }
 
 @media(max-width:768px){
 
 .hero-content h1{
-font-size:35px;
+font-size:38px;
 }
 
-.contact-grid{
+.about{
 grid-template-columns:1fr;
 }
 
-nav{
-flex-direction:column;
-gap:15px;
-}
-
 nav ul{
-flex-wrap:wrap;
-justify-content:center;
+display:none;
 }
 
 }
@@ -224,36 +213,37 @@ justify-content:center;
 <body>
 
 <header>
-<nav>
-<div class="logo">Defense Home Tutor Service</div>
 
+<div class="logo">
+<img src="logo.png" alt="Defense Home Tutor Service">
+<span>Defense Home Tutor Service</span>
+</div>
+
+<nav>
 <ul>
+<li><a href="#home">Home</a></li>
 <li><a href="#about">About</a></li>
 <li><a href="#services">Services</a></li>
+<li><a href="#reviews">Reviews</a></li>
 <li><a href="#contact">Contact</a></li>
-<li><a href="#faq">FAQ</a></li>
 </ul>
-
 </nav>
+
 </header>
 
-<section class="hero">
+<section class="hero" id="home">
 
 <div class="hero-content">
 
-<h1>Professional Home & Online Tutors in DHA Lahore</h1>
+<h1>Professional Home Tutors In DHA Lahore</h1>
 
 <p>
-Qualified Home Tutors, Online Tutors, O Level Tutors and A Level Tutors helping students achieve academic excellence through personalized learning.
+Qualified Home Tutors, Online Tutors, O Level Tutors and A Level Tutors helping students achieve excellent academic results.
 </p>
 
 <a href="tel:03074816551" class="btn">Call Now</a>
 
 <a href="https://wa.me/923074816551" class="btn">WhatsApp</a>
-
-<a href="https://maps.app.goo.gl/RhL7QDR2AVKX11eZ7" target="_blank" class="btn">
-View Google Business Profile
-</a>
 
 </div>
 
@@ -265,9 +255,23 @@ View Google Business Profile
 
 <div class="about">
 
+<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80">
+
+<div class="about-text">
+
+<h3>Trusted Tutors For Academic Success</h3>
+
 <p>
-Welcome to Defense Home Tutor Service. We provide highly qualified tutors for students of all grades and academic levels in DHA Lahore. Whether you need a Home Tutor, Online Tutor, O Level Tutor, A Level Tutor, or subject specialist, our experienced educators are committed to helping students improve performance, build confidence, and achieve outstanding results.
+Defense Home Tutor Service provides experienced and qualified tutors for students of all academic levels. We offer Home Tutors, Online Tutors, O Level Tutors, A Level Tutors, Matric Tutors and FSC Tutors throughout DHA Lahore.
 </p>
+
+<br>
+
+<p>
+Our mission is to provide personalized education that improves confidence, grades and overall learning experience.
+</p>
+
+</div>
 
 </div>
 
@@ -279,41 +283,129 @@ Welcome to Defense Home Tutor Service. We provide highly qualified tutors for st
 
 <div class="services">
 
-<div class="card">
+<div class="service-card">
 <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1200&q=80">
+<div class="service-content">
 <h3>Home Tutor</h3>
-<p>Professional home tutoring services in DHA Lahore with personalized one-on-one learning support.</p>
+<p>Experienced home tutors available across DHA Lahore for one-on-one personalized learning.</p>
+</div>
 </div>
 
-<div class="card">
+<div class="service-card">
 <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80">
+<div class="service-content">
 <h3>Online Tutor</h3>
-<p>Interactive online classes with flexible schedules and expert academic guidance.</p>
+<p>Professional online tutoring sessions with flexible schedules and expert guidance.</p>
+</div>
 </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55e?auto=format&fit=crop&w=1200&q=80">
+<div class="service-card">
+<img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80">
+<div class="service-content">
 <h3>O Level Tutor</h3>
-<p>Experienced O Level tutors for Mathematics, Physics, Chemistry, Biology and English.</p>
+<p>Qualified O Level tutors for Mathematics, Physics, Chemistry, Biology and English.</p>
+</div>
 </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1200&q=80">
-<h3>A Level Tutor</h3>
-<p>Specialized A Level instructors helping students achieve top grades and exam success.</p>
-</div>
-
-<div class="card">
+<div class="service-card">
 <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80">
-<h3>Matric & FSC Tutor</h3>
-<p>Comprehensive academic support for Matric and FSC students with result-oriented learning plans.</p>
+<div class="service-content">
+<h3>A Level Tutor</h3>
+<p>Professional A Level tutors helping students achieve excellent academic performance.</p>
+</div>
+</div>
+<div class="service-card">
+<img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1200&q=80">
+<div class="service-content">
+<h3>Matric Tutor</h3>
+<p>Expert Matric tutors for Science, Arts and Commerce subjects with result-oriented teaching methods.</p>
+</div>
 </div>
 
-<div class="card">
+<div class="service-card">
 <img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=1200&q=80">
-<h3>Subject Specialists</h3>
-<p>Expert tutors available for Science, Mathematics, English, Computer Science and more.</p>
+<div class="service-content">
+<h3>FSC Tutor</h3>
+<p>Professional FSC tutors helping students prepare for board exams and entry tests effectively.</p>
 </div>
+</div>
+
+</div>
+
+</section>
+
+<section id="reviews">
+
+<h2 class="section-title">Student Reviews</h2>
+
+<div class="services">
+
+<div class="service-card">
+<div class="service-content">
+⭐⭐⭐⭐⭐
+<h3>Ahmed Raza</h3>
+<p>
+Excellent tutoring service. My grades improved significantly within a few months.
+</p>
+</div>
+</div>
+
+<div class="service-card">
+<div class="service-content">
+⭐⭐⭐⭐⭐
+<h3>Fatima Khan</h3>
+<p>
+Highly professional tutors. The online classes were very effective and organized.
+</p>
+</div>
+</div>
+
+<div class="service-card">
+<div class="service-content">
+⭐⭐⭐⭐⭐
+<h3>Ali Hassan</h3>
+<p>
+Best O Level tutor experience. Very supportive and knowledgeable teachers.
+</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section id="register">
+
+<h2 class="section-title">Tutor Registration Form</h2>
+
+<div style="max-width:800px;margin:auto;background:#fff;padding:40px;border-radius:15px;box-shadow:0 10px 25px rgba(0,0,0,.08);">
+
+<form>
+
+<input type="text" placeholder="Full Name" required
+style="width:100%;padding:15px;margin-bottom:15px;border:1px solid #ddd;border-radius:8px;">
+
+<input type="tel" placeholder="Phone Number" required
+style="width:100%;padding:15px;margin-bottom:15px;border:1px solid #ddd;border-radius:8px;">
+
+<input type="email" placeholder="Email Address" required
+style="width:100%;padding:15px;margin-bottom:15px;border:1px solid #ddd;border-radius:8px;">
+
+<input type="text" placeholder="Qualification"
+style="width:100%;padding:15px;margin-bottom:15px;border:1px solid #ddd;border-radius:8px;">
+
+<input type="text" placeholder="Subject Specialization"
+style="width:100%;padding:15px;margin-bottom:15px;border:1px solid #ddd;border-radius:8px;">
+
+<input type="text" placeholder="Area"
+style="width:100%;padding:15px;margin-bottom:15px;border:1px solid #ddd;border-radius:8px;">
+
+<button type="submit"
+style="background:#071a3d;color:#fff;padding:15px 35px;border:none;border-radius:8px;cursor:pointer;">
+Register Now
+</button>
+
+</form>
 
 </div>
 
@@ -323,23 +415,45 @@ Welcome to Defense Home Tutor Service. We provide highly qualified tutors for st
 
 <h2 class="section-title">Contact Us</h2>
 
-<div class="contact-grid">
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:30px;">
 
-<div class="contact-box">
+<div style="background:#fff;padding:35px;border-radius:15px;box-shadow:0 10px 25px rgba(0,0,0,.08);">
+
+<h3 style="margin-bottom:20px;">Send Message</h3>
+
+<form>
+
+<input type="text" placeholder="Your Name"
+style="width:100%;padding:15px;margin-bottom:15px;border:1px solid #ddd;border-radius:8px;">
+
+<input type="email" placeholder="Your Email"
+style="width:100%;padding:15px;margin-bottom:15px;border:1px solid #ddd;border-radius:8px;">
+
+<textarea placeholder="Your Message"
+style="width:100%;height:150px;padding:15px;border:1px solid #ddd;border-radius:8px;"></textarea>
+
+<br><br>
+
+<button type="submit"
+style="background:#071a3d;color:#fff;padding:15px 35px;border:none;border-radius:8px;">
+Send Message
+</button>
+
+</form>
+
+</div>
+
+<div style="background:#fff;padding:35px;border-radius:15px;box-shadow:0 10px 25px rgba(0,0,0,.08);">
 
 <h3>Business Information</h3>
 
 <br>
 
 <p><strong>Business Name:</strong> Defense Home Tutor Service</p>
-
-<p><strong>Address:</strong> DHA Lahore, Punjab, Pakistan</p>
-
 <p><strong>Phone:</strong> 0307-4816551</p>
-
 <p><strong>Email:</strong> defensehometutor01@gmail.com</p>
-
-<p><strong>Hours:</strong> Monday - Sunday (8:00 AM - 10:00 PM)</p>
+<p><strong>Address:</strong> DHA Lahore, Punjab, Pakistan</p>
+<p><strong>Hours:</strong> Mon - Sun (8AM - 10PM)</p>
 
 <br>
 
@@ -347,65 +461,180 @@ Welcome to Defense Home Tutor Service. We provide highly qualified tutors for st
 
 </div>
 
-<div class="contact-box">
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Location Map</h2>
 
 <iframe
 src="https://maps.google.com/maps?q=DHA%20Lahore&t=&z=13&ie=UTF8&iwloc=&output=embed"
 width="100%"
-height="350"
-style="border:0;"
-allowfullscreen>
+height="450"
+style="border:0;border-radius:15px;">
 </iframe>
 
-</div>
-
-</div>
-
 </section>
-
 <section id="faq">
 
 <h2 class="section-title">Frequently Asked Questions</h2>
 
-<div class="faq">
+<div style="max-width:900px;margin:auto;">
 
-<details>
-<summary>Do you provide tutors at home?</summary>
-<p>Yes, we provide qualified home tutors throughout DHA Lahore.</p>
+<details style="background:#fff;padding:20px;margin-bottom:15px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.08);">
+<summary><strong>Do you provide Home Tutors in DHA Lahore?</strong></summary>
+<p style="margin-top:15px;">Yes, we provide qualified home tutors throughout DHA Lahore and nearby areas.</p>
 </details>
 
-<details>
-<summary>Do you offer online tutoring?</summary>
-<p>Yes, online classes are available for students across Pakistan.</p>
+<details style="background:#fff;padding:20px;margin-bottom:15px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.08);">
+<summary><strong>Do you offer Online Tutoring?</strong></summary>
+<p style="margin-top:15px;">Yes, we offer online tutoring services for students across Pakistan.</p>
 </details>
 
-<details>
-<summary>Do you provide O Level and A Level tutors?</summary>
-<p>Yes, we offer experienced tutors for all major O Level and A Level subjects.</p>
+<details style="background:#fff;padding:20px;margin-bottom:15px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.08);">
+<summary><strong>Do you provide O Level and A Level Tutors?</strong></summary>
+<p style="margin-top:15px;">Absolutely. We provide experienced O Level and A Level subject specialists.</p>
 </details>
 
-<details>
-<summary>How can I book a tutor?</summary>
-<p>Call us directly or contact us via WhatsApp for quick assistance.</p>
+<details style="background:#fff;padding:20px;margin-bottom:15px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.08);">
+<summary><strong>How can I hire a tutor?</strong></summary>
+<p style="margin-top:15px;">Simply call us or contact us through WhatsApp to book a tutor.</p>
 </details>
 
 </div>
 
 </section>
 
-<footer>
+<footer style="background:#071a3d;color:#fff;padding:70px 8% 30px;">
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:40px;">
+
+<div>
+
+<img src="logo.png" alt="Defense Home Tutor Service" style="height:80px;margin-bottom:15px;">
 
 <h3>Defense Home Tutor Service</h3>
 
-<p>Professional Home & Online Tutors in DHA Lahore</p>
+<p style="margin-top:15px;line-height:1.8;">
+Professional Home Tutors, Online Tutors, O Level Tutors and A Level Tutors in DHA Lahore.
+</p>
 
-<p>© 2026 All Rights Reserved.</p>
+</div>
+
+<div>
+
+<h3>Quick Links</h3>
+
+<br>
+
+<p><a href="#home" style="color:#fff;text-decoration:none;">Home</a></p>
+<p><a href="#about" style="color:#fff;text-decoration:none;">About Us</a></p>
+<p><a href="#services" style="color:#fff;text-decoration:none;">Services</a></p>
+<p><a href="#reviews" style="color:#fff;text-decoration:none;">Reviews</a></p>
+<p><a href="#contact" style="color:#fff;text-decoration:none;">Contact Us</a></p>
+
+</div>
+
+<div>
+
+<h3>Our Services</h3>
+
+<br>
+
+<p>Home Tutor</p>
+<p>Online Tutor</p>
+<p>O Level Tutor</p>
+<p>A Level Tutor</p>
+<p>Matric Tutor</p>
+<p>FSC Tutor</p>
+
+</div>
+
+<div>
+
+<h3>Contact Information</h3>
+
+<br>
+
+<p>📞 0307-4816551</p>
+
+<p>📧 defensehometutor01@gmail.com</p>
+
+<p>📍 DHA Lahore, Punjab, Pakistan</p>
+
+<p>🕒 Mon - Sun (8AM - 10PM)</p>
+
+</div>
+
+<div>
+
+<h3>Legal Pages</h3>
+
+<br>
+
+<p><a href="#" style="color:#fff;text-decoration:none;">Privacy Policy</a></p>
+
+<p><a href="#" style="color:#fff;text-decoration:none;">Terms & Conditions</a></p>
+
+<p><a href="#" style="color:#fff;text-decoration:none;">Disclaimer</a></p>
+
+<p><a href="#" style="color:#fff;text-decoration:none;">Sitemap</a></p>
+
+</div>
+
+</div>
+
+<hr style="margin:40px 0;border-color:rgba(255,255,255,.15);">
+
+<div style="text-align:center;">
+
+<p>
+© 2026 Defense Home Tutor Service. All Rights Reserved.
+</p>
+
+</div>
 
 </footer>
 
-<a class="whatsapp" href="https://wa.me/923074816551" target="_blank">
+<a href="https://wa.me/923074816551"
+target="_blank"
+style="
+position:fixed;
+right:20px;
+bottom:20px;
+background:#25D366;
+color:#fff;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:600;
+z-index:9999;
+box-shadow:0 5px 20px rgba(0,0,0,.25);
+">
 WhatsApp
 </a>
+
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"LocalBusiness",
+"name":"Defense Home Tutor Service",
+"image":"logo.png",
+"telephone":"0307-4816551",
+"email":"defensehometutor01@gmail.com",
+"address":{
+"@type":"PostalAddress",
+"streetAddress":"DHA Lahore",
+"addressLocality":"Lahore",
+"addressRegion":"Punjab",
+"addressCountry":"PK"
+},
+"url":"https://yourwebsite.com",
+"openingHours":"Mo,Tu,We,Th,Fr,Sa,Su 08:00-22:00"
+}
+</script>
 
 </body>
 </html>
